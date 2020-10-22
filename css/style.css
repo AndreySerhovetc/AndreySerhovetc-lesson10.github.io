@@ -20,6 +20,13 @@ ul{
     margin-top: 53px;
 }
 
+@media(max-width:576px) {
+    .logo, .logo__footer {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
 .header__menu-link {
     font-size: 14px;
     line-height: 16px;
@@ -37,6 +44,12 @@ ul{
     
 }
 
+@media(max-width:336px) {
+    .header__menu-link {
+        font-size: 12px;
+    }
+}
+
 .header-hero {
     margin-top: 124px;
 }
@@ -48,11 +61,25 @@ ul{
     margin-bottom: 24px;
 }
 
+@media(max-width: 768px) {
+    .header-hero-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
 .header-hero-desc {
     font-size: 32px;
     line-height: 52px;
     color: #4F4F4F;
     margin-bottom: 55px;
+}
+
+@media(max-width: 768px) {
+    .header-hero-desc {
+        font-size: 24px;
+        text-align: justify;
+    }
 }
 
 .btn--contact {
@@ -129,7 +156,13 @@ ul{
   .clients-icon {
       margin-bottom: 60px;
   }
+  @media(max-width:768px) {
+    .clients-icon {
+      margin-bottom: 0;  
+    }  
+  }
 
+  
   /* team */
 
   .team {
@@ -155,3 +188,5 @@ ul{
       background: #f7f7f7;
       padding: 20px 20px;
   }
+
+ 
