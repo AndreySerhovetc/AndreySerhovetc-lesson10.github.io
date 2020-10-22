@@ -5,13 +5,14 @@ body {
     font-family: "Hellix", Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
 /* colors */
 :root {
-    --accent-color: #5528FF; 
+    --accent-color: #5528FF;
 }
 
 /* header */
@@ -21,7 +22,9 @@ ul{
 }
 
 @media(max-width:576px) {
-    .logo, .logo__footer {
+
+    .logo,
+    .logo__footer {
         text-align: center;
         margin-bottom: 20px;
     }
@@ -34,14 +37,15 @@ ul{
     padding: 6px 10px;
 
 }
-.header__menu-link:hover { 
+
+.header__menu-link:hover {
     width: 100px;
     height: 24px;
-    color: #fff; 
+    color: #fff;
     background: var(--accent-color);
-    border-radius: 5px; 
+    border-radius: 5px;
     text-decoration: none;
-    
+
 }
 
 @media(max-width:336px) {
@@ -103,90 +107,94 @@ ul{
     margin: 0;
     white-space: nowrap;
     text-transform: uppercase;
-  }
-  
-  .line-title::before,
-  .line-title::after {
+}
+
+.line-title::before,
+.line-title::after {
     content: '';
     display: inline-block;
     position: relative;
     top: -3px;
     height: 1px;
     vertical-align: middle;
-    background:#C2C2C2;
-  }
-  
-  .line-title::before {
+    background: #C2C2C2;
+}
+
+.line-title::before {
     left: -15px;
     margin-left: -66%;
     width: 70%;
-  }
-  
-  .line-title::after {
+}
+
+.line-title::after {
     left: 15px;
     margin-right: -50%;
     width: 200%;
-  }
+}
 
-  /* servises */
+/* servises */
 
-  .servises {
-      margin-top: 100px;
-      margin-bottom: 100px;
-  }
+.servises {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-  .servises__title {
+.desc__servises {
+    width: 290px;
+}
+
+.servises__title {
     font-size: 28px;
     line-height: 33px;
     color: #000000;
-  }
 
-  .servises__text {
+}
+
+.servises__text {
     font-size: 14px;
     line-height: 16px;
     color: #B2B2B2;
-  }
+}
 
-  /* clients */
+/* clients */
 
-  .clients {
-      margin-top: 50px;
-  }
-  
-  .clients-icon {
-      margin-bottom: 60px;
-  }
-  @media(max-width:768px) {
+.clients {
+    margin-top: 50px;
+}
+
+.clients-icon {
+    margin-bottom: 60px;
+}
+
+@media(max-width:768px) {
     .clients-icon {
-      margin-bottom: 0;  
-    }  
-  }
+        margin-bottom: 0;
+    }
+}
 
-  
-  /* team */
 
-  .team {
-      margin-top: 100px;
-      margin-bottom: 100px;
-  }
+/* team */
 
-  .name {
+.team {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.name {
     font-size: 28px;
     line-height: 33px;
     color: #202020;
-  }
+}
 
-  .profession {
+.profession {
     font-size: 14px;
     line-height: 16px;
     color: #B2B2B2;
-  }
+}
 
-  /* footer */
+/* footer */
 
-  .footer {
-      background: #f7f7f7;
-      padding: 20px 20px;
-  }
-
- 
+.footer {
+    background: #f7f7f7;
+    padding: 20px 20px;
+}
