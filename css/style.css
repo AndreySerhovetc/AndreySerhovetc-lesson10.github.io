@@ -140,15 +140,28 @@ ul {
 }
 
 .desc__servises {
-    width: 290px;
+    max-width: 290px;
+}
+
+@media(max-width: 426px) {
+    .desc__servises {
+        width: 230px;
+    }
 }
 
 .servises__title {
     font-size: 28px;
     line-height: 33px;
     color: #000000;
-
 }
+
+@media(max-width: 426px) {
+    .servises__title {
+       font-size: 20px;
+       font-weight: 500;
+    }
+}
+
 
 .servises__text {
     font-size: 14px;
@@ -156,22 +169,18 @@ ul {
     color: #B2B2B2;
 }
 
+
 /* clients */
 
 .clients {
     margin-top: 50px;
 }
-
-.clients-icon {
-    margin-bottom: 60px;
-}
-
-@media(max-width:768px) {
-    .clients-icon {
-        margin-bottom: 0;
+@media(max-width:576px){
+    .img-wrap {
+        text-align: center;
+        width: 100%;
     }
 }
-
 
 /* team */
 
@@ -197,4 +206,88 @@ ul {
 .footer {
     background: #f7f7f7;
     padding: 20px 20px;
+}
+
+/* animation */
+
+.icon_servises--left[data-scroll] {
+    transition: all 1s ease-in-out ;
+}
+
+.icon_servises--left[data-scroll="in"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.icon_servises--left[data-scroll="out"] {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.desc__servises--left[data-scroll] {
+    transition: all 1s ease-in-out ;
+}
+
+.desc__servises--left[data-scroll="in"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.desc__servises--left[data-scroll="out"] {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.icon_servises--right[data-scroll] {
+    transition: all 1s ease-in-out ;
+}
+
+.icon_servises--right[data-scroll="in"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.icon_servises--right[data-scroll="out"] {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.desc__servises--right[data-scroll] {
+    transition: all 1s ease-in-out ;
+}
+
+.desc__servises--right[data-scroll="in"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.desc__servises--right[data-scroll="out"] {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.clients[data-scroll] {
+    transition: all 1s ease-in-out ;
+}
+
+.clients[data-scroll="in"] {
+    opacity: 1;  
+    
+}
+
+.clients[data-scroll="out"] {
+    opacity: 0;  
+}
+
+
+.team[data-scroll] {
+    transition: all 1s ease-in-out ;
+}
+
+.team[data-scroll="in"] {
+    transform: rotateY(0);
+}
+
+.team[data-scroll="out"] {
+    transform: rotateY(90deg);
 }

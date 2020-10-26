@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -16,7 +17,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-2 col-md-4 col-sm-3">
-                        <div class="logo">
+                        <div class="logo animate__animated animate__heartBeat">
                             <a class="logo__link" href="#">
                                 <img class="logo__img" src="img/logo.svg" alt="mamon">
                             </a>
@@ -40,10 +41,10 @@
             <div class="container">
                 <div class="row d-flex flex-column">
                     <div class="col-12">
-                        <h1 class="header-hero-title">We're an independent development agency.</h1>
+                        <h1 class="header-hero-title animate__animated animate__slideInUp">We're an independent development agency.</h1>
                     </div>
                     <div class="col-12 col-lg-8 col-md-12 col-sm-12">
-                        <p class="header-hero-desc">We understand the intricacies of web development inside-out.
+                        <p class="header-hero-desc animate__animated animate__slideInUp">We understand the intricacies of web development inside-out.
                             That's why we build rock-solid Mobile and Web applications enriched with user-centered
                             visual experiences.</p>
                     </div>
@@ -59,13 +60,13 @@
     <main class="main">
         <h2 class="line-title">Our servises</h2>
         <section class="servises">
-            <div class="container">
-                <div class="row d-flex justify-content-around">
-                    <div class="col-5 col-lg-5 col-md-2 col-sm-2 d-flex align-items-center justify-content-between">
-                        <div class="icon_servises">
+            <div class="container-fluid container-lg">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-8 d-flex align-items-center justify-content-around offset-sm-2 offset-md-0 mb-4 ">
+                        <div class="icon_servises icon_servises--left" data-scroll>
                             <img class="servises__icon" src="img/smartphone.svg" alt="servises-icon">
                         </div>
-                        <div class="desc__servises">
+                        <div class="desc__servises desc__servises--left" data-scroll>
                             <h3 class="servises__title">Mobile Development</h3>
                             <p class="servises__text">We develop mobile apps for all contemporary
                                 mobile platforms. Mamon team builds
@@ -73,11 +74,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-5 col-lg-5 col-md-2 col-sm-2 d-flex align-items-center justify-content-between">
-                        <div class="icon_servises">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-8 d-flex align-items-center justify-content-around offset-sm-2 offset-md-0 mb-4">
+                        <div class="icon_servises icon_servises--right" data-scroll>
                             <img class="servises__icon" src="img/monitor.svg" alt="servises-icon">
                         </div>
-                        <div class="desc__servises">
+                        <div class="desc__servises desc__servises--right" data-scroll>
                             <h3 class="servises__title">Web Development</h3>
                             <p class="servises__text">Mamon offers full range of services from various
                                 CMS and frameworks based websites to complex
@@ -85,13 +86,11 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-around">
-                    <div class="col-5 col-lg-5 col-md-2 col-sm-2 d-flex align-items-center justify-content-between">
-                        <div class="icon_servises">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-8 d-flex align-items-center justify-content-around offset-sm-2 offset-md-0 mb-4">
+                        <div class="icon_servises icon_servises--left" data-scroll>
                             <img class="servises__icon" src="img/layers.svg" alt="servises-icon">
                         </div>
-                        <div class="desc__servises">
+                        <div class="desc__servises desc__servises--left" data-scroll>
                             <h3 class="servises__title">Product Design</h3>
                             <p class="servises__text">We create design given the product audience,
                                 goal, business domain, technology and
@@ -99,15 +98,15 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-5 col-lg-5 col-md-2 col-sm-2 d-flex align-items-center justify-content-between">
-                        <div class="icon_servises">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-8 d-flex align-items-center justify-content-around offset-sm-2 offset-md-0">
+                        <div class="icon_servises icon_servises--right" data-scroll>
                             <img class="servises__icon" src="img/test.svg" alt="servises-icon">
                         </div>
-                        <div class="desc__servises">
+                        <div class="desc__servises desc__servises--right" data-scroll>
                             <h3 class="servises__title">Quality Assurance</h3>
                             <p class="servises__text">Our QA team ensures high standard of 
                                 quality of products delivered.
-                                
+l                                
                             </p>
                         </div>
                     </div>
@@ -116,119 +115,149 @@
 
         </section>
         <h2 class="line-title">Our Clients</h2>
-        <section class="clients">
-            <div class="container">
-                <div class="clients-icon">
-                    <div class="row d-flex justify-content-lg-around">
-                        <div class="col-12 col-lg-2 col-md-3 col-sm-6 mb-5"><img src="img/logo-lightspeed.svg"
-                                alt="our-clients">
+        <section class="clients" data-scroll>
+            <div class="container-fluid container-lg">      
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5 align-self-sm-center">
+                            <div class="img-wrap">
+                                <img src="img/logo-lightspeed.svg" alt="our-clients">
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-2 col-md-2 col-sm-6 mb-sm-5 mb-5"><img src="img/logo-trvl.svg"
-                                alt="our-clients">
+                        <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-sm-5 mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-trvl.svg" alt="our-clients">
+                            </div>
+
                         </div>
-                        <div class="col-12 col-lg-2 col-md-3 col-sm-6 mb-5"><img src="img/logo-spider-strategies.svg"
-                                alt="our-clients"></div>
-                        <div class="col-12 col-lg-2 col-md-3 col-sm-6 mb-sm-5 mb-5"><img src="img/logo-tripadvisor.svg"
-                                alt="our-clients"></div>
+                        <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-spider-strategies.svg" alt="our-clients"></div>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-sm-5 mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-tripadvisor.svg" alt="our-clients"></div>
+                        </div>
+
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6  mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-shutterfly.svg" alt="our-clients">
+                            </div>
+
+                        </div>
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6 mb-sm-5  mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-decos.svg" alt="our-clients"></div>
+                        </div>
+
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6 mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-tiqets.svg" alt="our-clients">
+                            </div>
+
+                        </div>
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6 mb-sm-5  mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-hotelchamp.svg" alt="our-clients"></div>
+                        </div>
+
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6  mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-flitsmeister.svg" alt="our-clients"></div>
+                        </div>
+
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6 mb-sm-5  mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-sap.svg" alt="our-clients"></div>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-3 col-sm-6  mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-redkix.svg" alt="our-clients">
+                            </div>
+
+                        </div>
+                        <div class="col-12  col-lg-3 col-md-3 col-sm-6 mb-sm-5 mb-5">
+                            <div class="img-wrap">
+                                <img src="img/logo-nos.svg" alt="our-clients">
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="clients-icon">
-                    <div class="row d-flex justify-content-lg-around justify-content-sm-center">
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6  mb-5"><img src="img/logo-shutterfly.svg"
-                                alt="our-clients">
-                        </div>
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6 mb-sm-5  mb-5"><img src="img/logo-decos.svg"
-                                alt="our-clients"></div>
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6 mb-5"><img src="img/logo-tiqets.svg"
-                                alt="our-clients">
-                        </div>
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6 mb-sm-5  mb-5"><img src="img/logo-hotelchamp.svg"
-                                alt="our-clients"></div>
                     </div>
-                </div>
-                <div class="clients-icon">
-                    <div class="row d-flex justify-content-lg-around justify-content-sm-center">
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6  mb-5"><img src="img/logo-flitsmeister.svg"
-                                alt="our-clients"></div>
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6 mb-sm-5  mb-5"><img src="img/logo-sap.svg"
-                                alt="our-clients"></div>
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6  mb-5"><img src="img/logo-redkix.svg"
-                                alt="our-clients">
-                        </div>
-                        <div class="col-12  col-lg-2 col-md-3 col-sm-6 mb-sm-5 mb-5"><img src="img/logo-nos.svg"
-                                alt="our-clients">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </section>
 
         <h2 class="line-title">Our Team</h2>
-        <section class="team">
-            <div class="container">
-                <div class="row justify-content-around align-items-center">
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5  mb-5"><img src="img/vadim.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6 ">
-                        <p class="name">Vadim</p>
+        <section class="team" data-scroll>
+            <div class="container-fluid container-lg">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/vadim.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Vadim</p>
                         <p class="profession">Managing Director</p>
+                        </div>
                     </div>
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5  mb-5"><img src="img/sergey.jpg"
-                            alt="our-team"></div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Sergey</p>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/sergey.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Sergey</p>
                         <p class="profession">Technology Director</p>
+                        </div>
                     </div>
-
-
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5 mb-5"><img src="img/andrey.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Andrey</p>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/andrey.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Andrey</p>
                         <p class="profession">Front-end Developer</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row justify-content-around align-items-center mt-5 mt-sm-0">
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5  mb-5"><img src="img/alex.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Alex</p>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/alex.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Alex</p>
                         <p class="profession">Front-end Developer</p>
+                        </div>
                     </div>
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5  mb-5"><img src="img/agnesh.jpg"
-                            alt="our-team"></div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Agneshka</p>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/agnesh.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Agneshka</p>
                         <p class="profession">Mobile Developer</p>
+                        </div>
                     </div>
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5 mb-5"><img src="img/dima.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Dmitry</p>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/dima.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Dmitry</p>
                         <p class="profession">Back-end Developer</p>
+                        </div>
                     </div>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/artem.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Artyom</p>
+                        <p class="profession">Back-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/evgen.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Evgeny</p>
+                        <p class="profession">Product Designer</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-sm-5 mb-5 d-flex align-items-end justify-content-around">
+                        <img src="img/tom.jpg" alt="our-team">
+                        <div class="teem-text__inner">
+                            <p class="name">Tom</p>
+                        <p class="profession">Product Designer</p>
+                        </div>
+                    </div>
+                    
                 </div>
 
-                <div class="row justify-content-around align-items-center mt-5 mt-sm-0">
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5  mb-5"><img src="img/artem.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Artyom</p>
-                        <p class="profession">Back-end Developer</p>
-                    </div>
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5 mb-5"><img src="img/evgen.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Evgeny</p>
-                        <p class="profession">Product Designer</p>
-                    </div>
-                    <div class="col-5 col-lg-1 col-md-2 col-sm-6 mb-sm-5 mb-5"><img src="img/tom.jpg" alt="our-team">
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-2 col-sm-6">
-                        <p class="name">Tom</p>
-                        <p class="profession">Product Designer</p>
-                    </div>
+                
                 </div>
             </div>
         </section>
@@ -264,6 +293,13 @@
 
         </div>
     </footer>
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+          once: true
+        });
+    </script>
 </body>
 
 </html>
