@@ -4,6 +4,7 @@
 body {
     font-family: "Hellix", Arial, Helvetica, sans-serif;
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 ul {
